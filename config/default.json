@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://nishit123:nishit123@cluster0-fke3b.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecrets": "mywebtoken"
+}
