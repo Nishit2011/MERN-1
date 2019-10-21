@@ -8,7 +8,7 @@ const config = require("config");
 const { check, validationResult } = require("express-validator");
 
 //@route GET api/auth
-//@desc Test route
+//@desc Test Route
 //@access Public
 
 router.get("/", auth, async (req, res) => {
@@ -22,6 +22,10 @@ router.get("/", auth, async (req, res) => {
   }
   res.send("Auth route");
 });
+
+//@route GET api/auth
+//@desc Authenticate User and get token
+//@access Public
 
 router.post(
   "/",

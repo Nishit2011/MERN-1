@@ -6,8 +6,9 @@ const User = require("../../models/User");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const config = require("config");
+
 //@route GET api/users
-//@desc Test route
+//@desc Register User
 //@access Public
 
 router.post(
@@ -69,7 +70,6 @@ router.post(
         { expiresIn: 360000 },
         (err, token) => {
           if (err) throw err;
-          console.log("User.js");
           res.json({ token });
         }
       );
